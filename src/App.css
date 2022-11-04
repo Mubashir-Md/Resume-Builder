@@ -1,38 +1,95 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1.main{
+  font-size: 3.4rem;
+}
+
+
+
+div.build{
+  display: flex;
+  height: 120vh;
+  padding: 1%;
+}
+section.preview{
+  /* border: 2px black solid; */
+  margin: 1%;
+  padding: 1%;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  
+}
+
+section.details{
+  /* border: 2px black solid; */
+  margin: 1%;
+  padding: 1%;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+div.output{
+  border: 2px blue solid;
+  height: 100vh;
+  width: 50vw;
+  margin: 2% auto;
+}
+
+section.preview{
+  background-color: rgb(238, 242, 242);
+}
+section.preview header{
+  background-color: #ecf2f5;
+  color: black;
+}
+header h1{
+  margin: 1%;
+}
+form label,input{
+  padding: 2%;
+  margin: 1%;
+  width: 50%;
+}
+
+section.preview header{
+  
+}
+
+section.preview header span.names{
+  height: 20%;
+}
+
+section.preview header span.contact{
+  height: 20%;
+}
+
+h3.obj{
+  max-width: 50vw;
+}
+
+div.Home{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.Home h2{
+  color: rgb(24, 24, 191);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.Home Link button{
+  text-decoration: none;
+  color: azure;
+  border: 1px blue solid;
+  padding: 1%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#download{
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1%;
+  margin: 2px auto;
 }
