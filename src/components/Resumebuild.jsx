@@ -24,7 +24,6 @@ const Resumebuild = () => {
   const handlesubmit = async (e)=>{
     e.preventDefault();
     let res = await fetch('http://localhost:3000/result', {
-      // a comment
       method: 'POST',
       body: JSON.stringify(data)
     }).then((response)=>{
