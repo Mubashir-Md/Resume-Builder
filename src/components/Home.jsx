@@ -11,7 +11,7 @@ const Home = () => {
       <h2>Your reputation is often your Resume <br/> -Jacklyn Johnson</h2>
       <img src={resume} alt='Resume' width={500}/>
       <br/>
-      <Link className='resume' to='/resumebuild'><button>Create your Resume now</button></Link>
+      <button ><Link className='resume' to='/resumebuild'>Create your Resume now</Link></button>
     </div>
   )
 }

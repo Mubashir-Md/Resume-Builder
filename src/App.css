@@ -80,13 +80,16 @@ div.Home h2{
   color: rgb(24, 24, 191);
 }
 
-div.Home Link button{
-  text-decoration: none;
+div.Home button{
+  
   color: azure;
-  border: 1px blue solid;
+  background-color: white;
   padding: 1%;
 }
-
+div.Home button Link{
+  color: white;
+  font-size: 20px;
+}
 #download{
   align-items: flex-end;
   justify-content: flex-end;

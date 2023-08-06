@@ -21,6 +21,28 @@ const Resumebuild = () => {
   const [exp, setExp] = useState('');
   const [skills, setSkills] = useState('');
   
+  const handlesubmit = async (e)=>{
+    e.preventDefault();
+    let res = await fetch('http://localhost:3000/result', {
+      method: 'POST',
+      body: JSON.stringify(data)
+    }).then((response)=>{
+      console.log(response)
+      return response.json()
+    })
+  }
+  const data = {
+    name: name,
+    title: title,
+    email: email,
+    number: number,
+    city: city,
+    country: country,
+    obj: obj,
+    edu: edu,
+    exp: exp,
+    skills:skills
+  };
   
 
   return (
@@ -30,7 +52,7 @@ const Resumebuild = () => {
         <section className='details'>
           <header>
             <h1>Fill in the details</h1>
-            <form action="">
+            <form action="" onSubmit={handlesubmit}>
               <label htmlFor="fname">Name</label>
               <input
                 type='text'
@@ -103,6 +125,7 @@ const Resumebuild = () => {
                 value={exp}
               />
               <br />
+              <button type='submit' id='btn'>Submit it here</button>
             </form>
           </header>
         </section>

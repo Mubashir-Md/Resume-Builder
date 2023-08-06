@@ -4,7 +4,7 @@ const Result = () => {
   return (
     <div>
       <div className='output'>
-        
+        Hello world
       </div>
     </div>
   )
